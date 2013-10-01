@@ -1,0 +1,43 @@
+header {
+  @extend .container;
+
+  border-bottom: 3px solid darken($body-bg, 30%);
+  margin-bottom: 5px;
+
+  h1 {
+    font-family: "minstrelposterwhgregular", "Helvetica Neue", Helvetica, Arial, sans serif;
+    margin-bottom: 5px;
+  }
+
+  .sign-in {
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 25px;
+    vertical-align: bottom;
+    a {
+      padding: 0px 8px 0px 8px;
+      color: $body-bg;
+      border-radius: 0px;
+      &:hover { 
+        text-decoration: none;
+        color: $body-bg;
+      }
+    }
+  }
+  i {
+    font-size: 22px;
+  }
+  a.twitter {
+    background-color: #3A87AD;
+    &:hover { background-color: lighten(#3A87AD, 20%); }
+  }
+  a.github {
+    background-color: #666;
+    &:hover { background-color: lighten(#666, 20%); }
+  }
+  a.google {
+    background-color: #468847;
+    &:hover { background-color: lighten(#468847, 20%); }
+  }
+}

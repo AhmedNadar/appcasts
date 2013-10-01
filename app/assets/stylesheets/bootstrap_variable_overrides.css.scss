@@ -1,0 +1,6 @@
+$body-bg: #F2F2F2;
+$font-size-base: 15px;
+
+// Change min size for "large" media query to huge number
+// so that it never actually triggers.
+$screen-lg: 10000px;
