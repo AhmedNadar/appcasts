@@ -22,4 +22,22 @@
             %i.icon-google-plus
 
     %section#main
-      .row= yield
+      .row
+        %section.content= yield
+        %section.sidebar
+          .sidebar-section
+            %h3.box-title.info-title
+              %i.icon-exclamation-sign
+              stay informed!
+            %p Create an account to be updated when new episodes are released.
+            %p Don't worry: no spam, and you can opt out at any time.
+
+          .sidebar-section
+            %h3.box-title
+              %i.icon-star
+              new casts
+
+          .sidebar-section
+            %h3.box-title
+              %i.icon-th-large
+              the apps

@@ -5,8 +5,23 @@
 @import "font-awesome";
 
 @import "header";
+@import "sidebar";
 @import "casts";
 
 #main {
   @extend .container;
+}
+
+.content {
+  @extend .col-md-9;
+}
+
+.box-title {
+  color: #FFF;
+  display: inline-block;
+  padding: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 4px;
 }

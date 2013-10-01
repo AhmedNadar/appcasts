@@ -1,0 +1,10 @@
+.sidebar {
+  @extend .col-md-3;
+
+  font-size: 13px;
+
+  .sidebar-section { margin-bottom: 15px; }
+  .box-title { background-color: darken($body-bg, 30%); }
+  .info-title { background-color: #C09853; }
+  p { margin-bottom: 5px; }
+}

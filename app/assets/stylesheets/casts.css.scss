@@ -1,11 +1,28 @@
 .casts {
+  .num {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
   h2 {
     background-color: #468847;
-    color: #FFF;
-    display: inline-block;
-    padding: 6px;
-    font-size: 16px;
+  }
+
+  img { width: 100%; border-radius: 4px; }
+
+  h3 { 
+    margin-top: 0px;
+    margin-bottom: 2px;
+  }
+
+  .cast {
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+
+  .app-title {
     font-weight: bold;
-    margin-top: 10px;
+    color: #468847;
+    font-size: 14px;
   }
 }
