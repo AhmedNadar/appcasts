@@ -15,8 +15,9 @@ describe Cast do
 
   describe '#image_url' do
     it 'creates proper url' do
-      cast = build(:cast, number: 15)
-      expect(cast.image_url).to eq("software_as_a_service_application_15.png")
+      app = create(:app, title: 'Software as a Service App')
+      cast = build(:cast, number: 15, app: app)
+      expect(cast.image_url).to eq("software_as_a_service_app_15.png")
     end
   end
 end

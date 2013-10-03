@@ -7,6 +7,7 @@ class Cast < ActiveRecord::Base
   validates :app, presence: true
 
   def image_url
-    "Software as a Service Application".gsub(' ', '_').downcase + "_#{number}.png"
+    app_title = app.title.gsub(' ', '_').downcase
+    "#{app_title}_#{number}.png"
   end
 end
