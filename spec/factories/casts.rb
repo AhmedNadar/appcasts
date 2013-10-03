@@ -4,5 +4,7 @@ FactoryGirl.define do
     sequence(:number) { |n| n }
     description "Here's a description"
     sequence(:vimeo_number) { |n| n }
+
+    app
   end
 end
