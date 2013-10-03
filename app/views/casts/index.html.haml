@@ -2,9 +2,9 @@
   - @casts.each do |cast|
     .cast.row
       .col-md-5
-        = image_tag cast.image_url
+        = link_to image_tag(cast.image_url), cast_path(cast)
       .col-md-7
         %span.num= "episode ##{cast.number} - "
         %span.app-title Software as a Service Application (fake)
-        %h3= cast.title
+        %h3= link_to cast.title, cast_path(cast)
         = cast.description

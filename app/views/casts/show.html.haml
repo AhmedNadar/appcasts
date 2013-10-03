@@ -1,0 +1,20 @@
+.cast
+  .cast.row
+    .col-md-5
+      = image_tag @cast.image_url
+    .col-md-7
+      %span.num= "episode ##{@cast.number} - "
+      %span.app-title Software as a Service Application (fake)
+      %h3= @cast.title
+      = @cast.description
+
+  .row
+    .col-md-12.cast-nav
+      = link_to root_path, class: 'active_section' do
+        notes
+      = link_to root_path do
+        transcript
+      = link_to root_path do
+        comments
+      = link_to root_path do
+        code

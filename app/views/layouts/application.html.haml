@@ -11,7 +11,7 @@
     %header
       .row
         .col-md-6
-          %h1 AppCasts.io
+          %h1= link_to "AppCasts.io", root_path
         .col-md-6.sign-in
           sign in: &nbsp;&nbsp;
           =link_to root_path, class: 'twitter btn' do
@@ -22,6 +22,10 @@
             %i.icon-google-plus
 
     %section#main
+      - if show_cast?
+        .row.embeded_cast
+          .col-md-12
+            != '<iframe src="https://player.vimeo.com/video/75166497?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="940" height="528" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
       .row
         %section.content= yield
         %section.sidebar

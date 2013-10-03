@@ -7,6 +7,13 @@ header {
   h1 {
     font-family: "minstrelposterwhgregular", "Helvetica Neue", Helvetica, Arial, sans serif;
     margin-bottom: 5px;
+    a {
+      color: #333;
+      &:hover {
+        text-decoration: none;
+        color: lighten(#333, 10%);
+      }
+    }
   }
 
   .sign-in {

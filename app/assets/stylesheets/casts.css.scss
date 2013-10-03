@@ -1,11 +1,7 @@
-.casts {
+.casts, .cast {
   .num {
     font-weight: bold;
     font-size: 13px;
-  }
-
-  h2 {
-    background-color: #468847;
   }
 
   img { width: 100%; border-radius: 4px; }
@@ -13,6 +9,13 @@
   h3 { 
     margin-top: 0px;
     margin-bottom: 2px;
+    a {
+      color: #333;
+      &:hover {
+        text-decoration: none;
+        color: lighten(#333, 20%);
+      }
+    }
   }
 
   .cast {
@@ -24,5 +27,27 @@
     font-weight: bold;
     color: #468847;
     font-size: 14px;
+  }
+}
+
+.cast .cast-nav {
+  a {
+    @extend .btn;
+    @extend .btn-default;
+
+    border: 0;
+    background-color: #A5A5A5;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+
+    &:hover {
+      background-color: lighten(#A5A5A5, 10%);
+      color: #FFF;
+    }
+  }
+  .active_section {
+    background-color: #3A87AD;
+    &:hover { background-color: #3A87AD; }
   }
 }
