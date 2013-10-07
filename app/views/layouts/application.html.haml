@@ -22,7 +22,7 @@
             %i.icon-google-plus
 
     %section#main
-      - if show_cast?
+      - if try(:show_cast?)
         .row.embeded_cast
           .col-md-12
             != '<iframe src="https://player.vimeo.com/video/75166497?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="940" height="528" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'

@@ -1,5 +1,6 @@
 Appcasts::Application.routes.draw do
-  root 'casts#index'
+  root 'apps#index'
 
-  resources :casts
+  resources :casts, only: [:show]
+  resources :apps, only: [:index, :show]
 end

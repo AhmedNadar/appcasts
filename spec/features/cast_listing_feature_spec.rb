@@ -1,11 +1,12 @@
 require 'spec_helper'
 
 describe 'cast listing' do
-  let!(:cast1) { create(:cast) }
-  let!(:cast2) { create(:cast) }
+  let!(:app1) { create(:app) }
+  let!(:cast1) { create(:cast, app: app1) }
+  let!(:cast2) { create(:cast, app: app1) }
 
   it 'lists cast information' do
-    visit casts_path
+    visit app_path(app1)
 
     expect(page).to have_content cast1.title
     expect(page).to have_content cast1.description

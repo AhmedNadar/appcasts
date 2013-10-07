@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :app do
-    title "App Title"
+    sequence(:title) { |n| "App #{n} Title" }
     description "App Description"
   end
 end
