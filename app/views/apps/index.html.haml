@@ -1,2 +1,16 @@
-- @apps.each do |app|
-  = link_to app.title, app
+-techs = ['Rails 4', 'Ruby 2', 'RSpec', 'Capybara', 'Bootstrap', 'Stripe', 'SSL/HTTPS']
+.apps
+  - @apps.each do |app|
+    .container.app-container
+      .row
+        %h2.col-md-12= app.title
+      .row
+        .col-md-4
+          img!
+        .col-md-8
+          = app.description
+          .row
+            -techs.each_slice(techs.size/3) do |t1, t2, t3|
+              .col-md-4
+                %i.icon-check
+                =t1
